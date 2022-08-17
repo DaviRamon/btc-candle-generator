@@ -21,7 +21,7 @@ export default class Candle {
           this.currency = currency;
      }
 
-     // adiciona os valors da candle
+     // adiciona os valores da candle
 
      addValue(value: number) {
           this.values.push(value);
@@ -31,7 +31,7 @@ export default class Candle {
                this.open = value;
           }
 
-          // altera os valos mais baixos do dia
+          // altera os valores mais baixos do dia
           if (this.low > value) {
                this.low = value;
           }
@@ -44,7 +44,7 @@ export default class Candle {
      }
 
 
-     // determina o preço de fechamento, a cor da candle e definir o horario de fechamento(finalDateTime)
+     // determina o preço de fechamento, a cor da candle e define o horario de fechamento(finalDateTime)
      closeCandle() {
 
           // se houve valores ele fecha a candle
