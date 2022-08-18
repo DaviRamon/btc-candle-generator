@@ -1,5 +1,4 @@
-import { runInThisContext } from "vm";
-import CandleColor from "../enums/CandleColor";
+     import CandleColor from "../enums/CandleColor";
 
 export default class Candle {
      low: number;
@@ -8,7 +7,7 @@ export default class Candle {
      close: number;
      color: CandleColor;
      values: number[];
-     currency: string;
+     currency: string; // qual é a moeda desejada.  atualmente só é usado o BTC no .env
      finalDateTime: Date;
 
      constructor(currency: string, initialDate: Date) {
